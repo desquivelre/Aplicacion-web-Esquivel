@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudio jurídico Esquivel</title>
+    <link rel="stylesheet" href="css/indexStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?famsily=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <main class="container">
+      <section id="Home" class="landing_page">  
+        <header class="main_header">
+          <div class="main_header-grid">
+              <a href="#Home" class="logo"><i class="fas fa-balance-scale-left fa-2x"></i><h1>Estudio jurídico Esquivel</h1><a>
+              <ul class="navbar">
+                <li><a href="#Home">Inicio</a></li>
+                <li><a href="#sec_speceialties">Especialidades</a></li>
+                <li><a href="#sec_about_us">Sobre nosotros</a></li>
+                <li><a href="#sec_contact">Contacto</a></li>
+              </ul>
+          </div>
+        </header>
+
+        <div class="landing_page-grid-text">
+          <h2>Tienes problemas con aquello</h2>
+          <p>Acércate a nuestras instalaciones que siempre velamos por el bienestar de todos los involucrados con el peso de la ley de manera profesional</p>
+          <button href="#Contact">Realizar consulta</button>
+        </div>
+      </section>
+      <section id="sec_speceialties"  class="specialties">
+        <h3>──── Nuestras especialidades ────</h2>
+        <div class="specialties-grid">       
+          <div class="card-family">
+            <h4>Familia</h4>
+            <button class="specialties-button">Ver mas</button>
+          </div>     
+          <div class="card-civil">
+            <h4>Civil</h4>
+            <button class="specialties-button">Ver mas</button>
+          </div>
+        </div>
+      </section>
+      <section id="sec_about_us" class="about_us">
+        <div class="about_us-flex">
+          <h3 class="about_us-titulo">──── Sobre nosotros ────</h2>
+          <div class="about_us-text">
+            <h3>Nuestro estudio</h3>
+            <p>La Conciliación Extrajudicial es una institución que se constituye como un mecanismo alternativo para la solución de conflictos, a fin que se les asista en la búsqueda de una solución consensual al conflicto. La Conciliación es un requisito de procedibilidad judicial necesariamente previo a todos los procesos que versan sobre derechos disponibles. Es un proceso muy rápido porque se puede solucionar en un plazo mínimo de un día y máximo de tres semanas. Además es un proceso económico en comparación a un proceso judicial.</p>
+          </div>
+         
+        </div>
+
+      </section>
+
+      <section id="sec_contact" class="contact">
+        <div class="sec_contact__content">
+          <h3 class="sec_contact__titulo">──── Contacto ────</h3>
+          <form action="" class="sec_contact__form">
+            <label for="" class="sec_contact__label">Nombres</label>
+            <input type="text" class="sec_contact__input" placeholder="Ingrese sus nombres">
+            <label for="" class="sec_contact__label" >Apellidos</label>
+            <input type="text" class="sec_contact__input" placeholder="Ingrese sus Apellidos">
+            <label for="" class="sec_contact__label" >Correo electronico</label>
+            <input type="text" class="sec_contact__input" placeholder="Ingrese su correo">
+            <label for="" class="sec_contact__label">Número celular</label>
+            <input type="text" class="sec_contact__input" placeholder="Ingrese su número celular">
+            <button type="submit" class="sec_contact__button">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="socialnetworks">
+          <h5>Redes sociales</h5>
+          <ul>
+            <li><a href="https://www.testufo.com/"><i class="fab fa-facebook fa-2x" style="color: whitesmoke"></i></a></li>
+            <li><a href=""><i class="fab fa-whatsapp-square fa-2x" style="color: whitesmoke;"></i></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </div>
+        <div class="pages">
+          <h5>Secciones</h5>
+          <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Especialidades</a></li>
+            <li><a href="">Sobre nosotros</a></li>
+            <li><a href="">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/637e4e9cad.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      window.addEventListener("scroll",function(){
+        var header = document.querySelector(".main_header");
+        header.classList.toggle("sticky",window.scrollY>0);
+      })  
+    </script>
+  </body>
+</html>

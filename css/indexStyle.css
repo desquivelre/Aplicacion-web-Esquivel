@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-padding: 60px;
+    scroll-behavior: smooth;
+}
+
+body{ 
+    font-family: 'Encode Sans SC', sans-serif;   
+}
+
+/* HEADER LANDING PAGE*/
+.main_header{
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    transition: 0.5s;
+    padding: 15px;
+    
+}
+
+.main_header-grid{
+   
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    gap: 10px;
+    overflow: hidden;
+ 
+}
+
+.logo{
+    grid-column: 1/7;
+    grid-row: 1/-1;
+    width: auto;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #F7DC6F ;
+}
+
+
+.logo h1{
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.navbar{
+    grid-column: 8/13;
+    grid-row: 1/-1;
+    list-style: none;
+
+
+    display: flex;
+    align-items: center;
+}
+
+.navbar li{
+    margin-left: 40px;
+}
+
+.navbar li a{
+    text-decoration: none; 
+    color: #5D6D7E ; 
+    font-size: 15px; 
+    font-weight: 600;
+}
+
+.navbar li a:hover{
+    color: #F7DC6F;
+}
+
+/* STICKY PROPERTY */
+.main_header.sticky{
+    background-color: #5D6D7E;
+  
+    
+}
+
+.main_header.sticky .navbar li a{
+    text-decoration: none; 
+    color: whitesmoke; 
+    font-size: 15px; 
+    font-weight: 500;
+}
+/* ENDS STICKY PROPERTY */
+
+/* ENDS HEADER LANDING PAGE*/
+
+/* LANDINGPAGE*/
+
+.landing_page{
+    background-image: url("/img/lady-justice-2388500_1920.jpg");
+}
+
+
+.landing_page-grid-text{
+    
+    display: grid;
+    grid-template-columns: 1/-1;
+    grid-template-rows: minmax(50px, 175px) 100px 100px;
+    width: 90%;
+    height: 100vh;
+    gap: 10px;
+    overflow: hidden;
+    
+    margin: auto;
+    padding: 10%;
+    
+}
+
+.landing_page-grid-text h2{
+    grid-row: 1/2;
+    margin: auto;
+
+    font-size: 40px;
+    color: whitesmoke;
+    
+}
+
+.landing_page-grid-text p{
+    grid-row: 2/3;
+    margin: auto;
+    max-width: 1000px;
+
+    color: whitesmoke;
+    
+}
+
+.landing_page-grid-text button{
+    grid-row: 3/4;
+    margin: auto;
+
+    border: none;
+    background-color: #F7DC6F;
+    color: #5D6D7E;
+    width: 150px;
+    height: 50px;
+    box-shadow: inset 0 0 0 0 #5D6D7E;
+    transition: ease-in-out 0.3s;
+
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Encode Sans SC', sans-serif;
+}
+
+.landing_page-grid-text button:hover{
+    box-shadow: inset 150px 0 0 0 #5D6D7E;
+    color: whitesmoke;
+    background-color: #5D6D7E;
+    cursor: pointer;
+}
+
+/* ENDS LANDINGPAGE*/
+
+/* SPECIALTIES */
+.specialties{
+    height: 100vh;
+    padding: 50px;
+}
+
+.specialties h3{
+    margin-bottom: 70px;
+    font-size: 28px;
+    color: #5D6D7E;
+    text-align: center;
+   
+}
+
+.specialties-grid{
+    display: grid;
+    grid-template-columns: repeat(autofill, minmax(15 rem, 1fr));
+    width: 90%;
+    margin: auto;
+    
+    gap: 10px;
+    overflow: hidden;
+    justify-content: space-around;
+    padding-top: 5%;
+}
+
+.card-family{
+    grid-row: -1/1; 
+    background-image: url("/img/justice.jpg");
+    background-size: 400px 400px;
+    width: 400px;
+    height: 400px;
+    padding-top: 170px;
+    border-radius: 10px;
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+
+    transition: all 0.5s;
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.2);
+}
+
+
+.card-family h4{
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.card-civil{
+    grid-row: -1/1; 
+    background-image: url("/img/acuerdo.jpg");
+    background-size: 400px 400px;
+    width: 400px;
+    height: 400px;
+    padding-top: 170px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+
+    transition: all 0.5s;
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.2);
+}
+
+.card-civil h4{
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.specialties-button{
+    border: none;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Encode Sans SC', sans-serif;
+
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+}
+
+/* ENDS SPECIALTIES */
+
+/* ABOUT US */
+
+.about_us{
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: #99abc2;
+    
+     
+}
+
+.about_us-titulo{
+    padding-top: 70px;
+    font-size: 28px;
+    color: whitesmoke;
+    text-align: center;
+    
+  
+}
+
+.about_us-flex{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+
+}
+
+.about_us-text{
+  
+    display: flex;
+    width: 600px;
+    text-align: center;
+    align-items: center;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+    margin: auto;
+
+    background-color: whitesmoke;
+    box-shadow: 20px 20px 0 0 gray;
+    padding: 100px;
+
+
+}
+
+
+/* ENDS ABOUT US */
+
+/* CONTACT */
+
+.contact{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.sec_contact__content{
+    width: 600px;
+    height: 750px;
+    margin: auto;
+    border: 2px solid #5D6D7E;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.sec_contact__titulo{
+    padding-bottom: 50px;
+    font-size: 28px;
+    color: #F7DC6F;
+    text-align: center;
+}
+
+.sec_contact__form{
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+.sec_contact__label{
+    margin: 20px auto;
+}
+
+.sec_contact__input{
+    width: 300px;
+    height: 45px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.sec_contact__button{
+    margin: 20px auto;
+    
+    width: 150px;
+    height: 35px;
+
+    border: none;
+    background-color: #5D6D7E;
+    color: whitesmoke;
+    cursor: pointer;
+
+    transition: ease-in-out 0.3s;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Encode Sans SC', sans-serif;
+}
+
+.sec_contact__button:hover{
+    background-color: #F7DC6F;
+    color: #5D6D7E;
+    
+}
+
+
+/* ENDS CONTACT */
+
+/* FOOTER */
+footer{
+    background-color: #5D6D7E;
+    color: whitesmoke;
+    padding: 30px;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(autofill, minmax(200px,500px));
+    margin: auto;
+    gap: 10px;
+    width: 90%;
+    overflow: hidden;
+}
+
+.footer-grid h5{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+    color:#F7DC6F;
+}
+
+.socialnetworks{
+    grid-row: -1/1;
+    width: 300px;
+}
+.socialnetworks ul{
+    list-style: none;
+}
+
+.socialnetworks li{
+  margin: 20px;
+}
+
+.pages{
+    grid-row: -1/1;
+    width: 300px;
+}
+
+.pages ul{
+    list-style: none;
+    
+}
+
+.pages li{
+    margin: 20px;
+  
+}
+
+.pages a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+.pages a:hover{
+    color:#F7DC6F;
+    cursor: pointer;
+}
+/* ENDS FOOTER */
